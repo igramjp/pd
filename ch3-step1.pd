@@ -1,0 +1,24 @@
+#N canvas 451 258 675 668 12;
+#X obj 26 25 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 26 54 openpanel;
+#X msg 26 86 read -resize \$1 snd;
+#X obj 26 115 soundfiler;
+#N canvas 0 0 450 300 (subpatch) 0;
+#X array snd 2494 float 0 black black;
+#X coords 0 1 2493 -1 200 140 1;
+#X restore 26 166 graph;
+#X obj 272 24 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 272 48 tabplay~ snd;
+#X obj 272 86 dac~;
+#X obj 406 26 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 1 1;
+#X msg 406 56 \; pd dsp \$1;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 5 0 6 0;
+#X connect 6 0 7 0;
+#X connect 6 0 7 1;
+#X connect 8 0 9 0;
