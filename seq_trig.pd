@@ -1,0 +1,106 @@
+#N canvas 396 282 1099 476 12;
+#N canvas 0 22 450 300 (subpatch) 0;
+#X array \$0-sequnit-trig 16 float 2 black black;
+#X coords 0 1 16 0 240 20 1;
+#X restore 302 64 graph;
+#X floatatom 409 361 5 0 0 0 - - -, f 5;
+#X floatatom 497 373 5 0 0 0 - - -, f 5;
+#X obj 408 312 unpack 0 0;
+#X msg 61 189 \$1 0;
+#X msg 104 190 \$1 1;
+#X msg 147 190 \$1 2;
+#X msg 190 190 \$1 3;
+#X msg 235 190 \$1 4;
+#X msg 278 191 \$1 5;
+#X msg 321 191 \$1 6;
+#X msg 364 191 \$1 7;
+#X msg 408 191 \$1 8;
+#X msg 451 192 \$1 9;
+#X msg 494 192 \$1 10;
+#X msg 544 191 \$1 11;
+#X msg 594 191 \$1 12;
+#X msg 644 190 \$1 13;
+#X msg 693 191 \$1 14;
+#X msg 743 190 \$1 15;
+#X obj 303 88 tgl 15 0 empty empty empty 17 7 0 10 #ff2600 #000000
+#000000 0 1;
+#X obj 318 88 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X obj 333 88 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X obj 348 88 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X obj 363 88 tgl 15 0 empty empty empty 17 7 0 10 #ff2600 #000000
+#000000 0 1;
+#X obj 378 88 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X obj 393 88 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X obj 408 88 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X obj 423 88 tgl 15 0 empty empty empty 17 7 0 10 #ff2600 #000000
+#000000 0 1;
+#X obj 438 88 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X obj 453 88 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X obj 468 88 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X obj 483 88 tgl 15 0 empty empty empty 17 7 0 10 #ff2600 #000000
+#000000 0 1;
+#X obj 498 88 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X obj 513 88 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X obj 528 88 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X obj 409 413 tabwrite \$0-sequnit-trig;
+#X obj 872 143 inlet;
+#X floatatom 872 172 5 0 0 0 - - -, f 5;
+#X obj 872 200 tabread \$0-sequnit-trig;
+#X floatatom 872 229 5 0 0 0 - - -, f 5;
+#X obj 872 257 sel 1;
+#X obj 872 286 outlet;
+#X connect 1 0 36 0;
+#X connect 2 0 36 1;
+#X connect 3 0 1 0;
+#X connect 3 1 2 0;
+#X connect 4 0 3 0;
+#X connect 5 0 3 0;
+#X connect 6 0 3 0;
+#X connect 7 0 3 0;
+#X connect 8 0 3 0;
+#X connect 9 0 3 0;
+#X connect 10 0 3 0;
+#X connect 11 0 3 0;
+#X connect 12 0 3 0;
+#X connect 13 0 3 0;
+#X connect 14 0 3 0;
+#X connect 15 0 3 0;
+#X connect 16 0 3 0;
+#X connect 17 0 3 0;
+#X connect 18 0 3 0;
+#X connect 19 0 3 0;
+#X connect 20 0 4 0;
+#X connect 21 0 5 0;
+#X connect 22 0 6 0;
+#X connect 23 0 7 0;
+#X connect 24 0 8 0;
+#X connect 25 0 9 0;
+#X connect 26 0 10 0;
+#X connect 27 0 11 0;
+#X connect 28 0 12 0;
+#X connect 29 0 13 0;
+#X connect 30 0 14 0;
+#X connect 31 0 15 0;
+#X connect 32 0 16 0;
+#X connect 33 0 17 0;
+#X connect 34 0 18 0;
+#X connect 35 0 19 0;
+#X connect 37 0 38 0;
+#X connect 38 0 39 0;
+#X connect 39 0 40 0;
+#X connect 40 0 41 0;
+#X connect 41 0 42 0;
+#X coords 0 -1 1 1 260 60 2 293 55;
+#X scroll 1;
