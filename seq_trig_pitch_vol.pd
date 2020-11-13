@@ -1,12 +1,12 @@
 #N canvas 473 277 525 600 12;
-#X obj 101 106 seq_trig;
-#X obj 100 184 seq_pitch;
-#X obj 101 287 seq_vol;
-#X obj 106 -30 inlet;
-#X obj 106 10 t f f f;
-#X obj 1 403 bang;
-#X obj 1 467 pack s f f;
-#X obj 1 516 outlet;
+#X obj 106 106 seq_trig;
+#X obj 105 184 seq_pitch;
+#X obj 106 287 seq_vol;
+#X obj 111 -30 inlet;
+#X obj 111 10 t f f f;
+#X obj 6 403 bang;
+#X obj 6 467 pack s f f;
+#X obj 6 516 outlet;
 #X connect 0 0 5 0;
 #X connect 1 0 6 1;
 #X connect 2 0 6 2;
@@ -16,5 +16,5 @@
 #X connect 4 2 2 0;
 #X connect 5 0 6 0;
 #X connect 6 0 7 0;
-#X coords 0 -1 1 1 330 280 1 100 100;
+#X coords 0 -1 1 1 340 280 1 100 100;
 #X scroll 1;
